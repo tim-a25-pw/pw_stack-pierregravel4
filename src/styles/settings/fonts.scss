@@ -9,7 +9,7 @@
     --font-size-content: 1.8rem;
 
     /// Grosseur des textes
-    --font-size-h1: 10rem;
-    --font-size-h2: 7rem;
-    --font-size-h3: 3.5rem;
+    --font-size-h1: #{typo(45px, 100px)};
+    --font-size-h2: #{typo(45px, 100px)};
+    --font-size-h3: #{typo(45px, 100px)};
 }

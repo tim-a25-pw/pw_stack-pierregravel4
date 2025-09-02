@@ -3,11 +3,40 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PENSE À ME CHANGER :)</title>
+        <title>TIM Canada</title>
 
         <link rel="stylesheet" href="styles/main.css" />
 
         <script src="scripts/main.js" defer></script>
     </head>
 
-    <body>
+    <body data-component="Scrolly" data-no-repeat>
+
+        <!-- Header -->
+
+<header class="header" data-component="Header" data-threshold="0.1">
+    <div class="wrapper">
+    
+<a href="#" class="header__brand">
+    <svg class="icon">
+        <use xlink:href="#icon-logo"></use>
+    </svg>
+    <span class="logo_text">
+    tim canada
+    </span>
+</a>
+<nav class="nav-primary">
+    <ul>
+        <li><a href="#" class="nav-primary__item">Athlètes</a></li>
+        <li><a href="#" class="nav-primary__item">Disciplines</a></li>
+        <li><a href="#" class="nav-primary__item">Programmes</a></li>
+        <li><a href="#" class="nav-primary__item">Contact</a></li>
+    </ul>
+</nav>
+ <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            </div>
+</header>
