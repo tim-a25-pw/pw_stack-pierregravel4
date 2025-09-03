@@ -1,26 +1,29 @@
-.header .wrapper{
+.header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     --header-height: 100px;
     height: var(--header-height);
+    @media screen and (max-width: 400px) {
+        padding: 0 10px;
+    }
 }
 
-.header ul{
+.header ul {
     list-style: none;
     display: flex;
     gap: 50px;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    li{
+    li {
         font-family: var(--font-secondary);
-        a{
+        a {
             color: var(--color-black);
             &:hover {
-            text-decoration: none;
-            color: var(--color-primary);
-    }
+                text-decoration: none;
+                color: var(--color-primary);
+            }
         }
     }
 }
@@ -29,20 +32,24 @@
     font-family: var(--font-primary);
     font-weight: 900;
     font-size: 40px;
+    @media screen and (max-width: 550px) {
+        font-size: 20px;
+    }
     &:hover {
         text-decoration: none;
     }
-  
 }
 
-.header__brand .icon{
+.header__brand .icon {
     width: 53px;
     height: 54px;
     margin-right: 30px;
-    
+    @media screen and (max-width: 550px) {
+        margin-right: 5px;
+    }
 }
 
-.logo_text{
+.logo_text {
     color: var(--color-black);
 }
 
@@ -104,8 +111,8 @@
     }
 }
 
-.nav-primary{
- background: var(--color-bg-secondary);
+.nav-primary {
+    background: var(--color-bg-secondary);
     position: absolute;
     top: 0;
     left: 0;

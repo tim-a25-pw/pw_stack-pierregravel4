@@ -3,6 +3,9 @@
     p {
         font-size: 18px;
         margin: 50px 0 0 565px;
+        @media screen and (max-width: $breakpoint-md) {
+            margin: 50px 0 0 5px;
+        }
     }
     h2 {
         margin: 125px 0 0 0;
@@ -18,6 +21,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin-top: 50px;
+    @media screen and (max-width: 850px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {
@@ -73,5 +79,15 @@
     }
     .icon {
         font-size: 65px;
+    }
+}
+@media screen and (max-width: $breakpoint-md) {
+    .card__content {
+        opacity: 1;
+        z-index: 2;
+    }
+    .card::before {
+        opacity: 0.5;
+        z-index: 1;
     }
 }

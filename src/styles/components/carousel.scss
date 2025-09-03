@@ -4,7 +4,7 @@
     font-size: 50px;
     font-weight: 600;
     text-align: end;
-    margin: 125px 0 50px 0;
+    margin: 125px 0 50px;
 }
 
 .swiper {
@@ -15,7 +15,11 @@
 
 .swiper-slide img {
     width: 100%;
+    object-fit: cover;
     height: auto;
+    @media screen and (max-width: $breakpoint-md) {
+        height: 550px;
+    }
 }
 
 .swiper-pagination {
@@ -27,6 +31,18 @@
     gap: 8px;
     z-index: 10;
     padding-right: 35px;
+    @media screen and (max-width: 1630px) {
+        transform: translateY(-250%);
+    }
+    @media screen and (max-width: 1400px) {
+        transform: translateY(-180%);
+    }
+    @media screen and (max-width: 1215px) {
+        transform: translateY(-150%);
+    }
+    @media screen and (max-width: $breakpoint-md) {
+        transform: translateY(-190%);
+    }
 }
 
 .swiper-pagination-bullet {
